@@ -36,75 +36,29 @@ Route::get('/session-data', function () {
 Route::get('/home', function () {
     return view('home');
 });
-
-Route::get('/control/edit/{id}', function () {
-    return view('home');
-});
-
-Route::get('/ticket/check/{token}', function () {
-    return view('home');
-});
-
-Route::get('/pdf/{id}', [PdfController::class, 'generatePdf']);
-
-Route::get('/excel/{id}', [ExcelController::class, 'generateExcel']);
-
-Route::get('/excel/token/{id}', [ExcelController::class, 'generateTokenExcel']);
      
 Route::middleware(['auth', 'checkrol:1'])->group(function () {
-    Route::get('/team', function () {
-        return view('home');
+    Route::get('/branch_office', function () {
+        return view('account');
     });
 
-    Route::get('/add_team', function () {
-        return view('home');
+    Route::get('/add_branch_office', function () {
+        return view('account');
     });
 
-    Route::get('/setting', function () {
-        return view('home');
+    Route::get('/cashier', function () {
+        return view('account');
+    });
+
+    Route::get('/collection', function () {
+        return view('account');
+    });
+
+    Route::get('/dte/show/{branch_officeid_id}/{cashier_id}/{date}', function () {
+        return view('account');
     });
     
     Route::get('/administrator', [AdministratorController::class, 'index']);
-});
-
-Route::middleware(['auth', 'checkrol:2'])->group(function () {
-    Route::get('/setting', function () {
-        return view('home');
-    });
-
-    Route::get('/event', function () {
-        return view('home');
-    });
-
-    Route::get('/add_event', function () {
-        return view('home');
-    });
-
-    Route::get('/control', function () {
-        return view('home');
-    });
-
-    Route::get('/add_control', function () {
-        return view('home');
-    });
-
-    Route::get('/ticket/{id}', function () {
-        return view('home');
-    });
-
-    Route::get('/organizator', [OrganizatorController::class, 'index']);
-});
-
-Route::middleware(['auth', 'checkrol:3'])->group(function () {
-    Route::get('/setting', function () {
-        return view('home');
-    });
-
-    Route::get('/qr_code', function () {
-        return view('home');
-    });
-
-    Route::get('/security', [SecurityController::class, 'index']);
 });
 
 require __DIR__.'/auth.php';
