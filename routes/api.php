@@ -2,11 +2,11 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\TeamController;
+use App\Http\Controllers\Api\BranchOfficeController;
 use App\Http\Controllers\Api\UserController;
-use App\Http\Controllers\Api\EventController;
-use App\Http\Controllers\Api\TicketController;
-use App\Http\Controllers\Api\ControlController;
+use App\Http\Controllers\Api\CashierController;
+use App\Http\Controllers\Api\DteController;
+use App\Http\Controllers\Api\CollectionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,12 +22,11 @@ use App\Http\Controllers\Api\ControlController;
 Route::middleware('auth:sanctum')->group(function () {
 });
 
-Route::resource('team', TeamController::class)->except(['create', 'edit']);
+Route::resource('branch_office', BranchOfficeController::class)->except(['create']);
 Route::resource('user', UserController::class)->except(['create', 'edit']);
-Route::resource('event', EventController::class)->except(['create', 'edit']);
-Route::resource('ticket', TicketController::class)->except(['create', 'edit']);
-Route::resource('control', ControlController::class)->except(['create', 'edit']);
-Route::get('event/all/{id}', 'App\Http\Controllers\Api\EventController@index');
-Route::get('control/status/{id}', 'App\Http\Controllers\Api\ControlController@status');
-Route::get('ticket/check/{id}/{user_id}', 'App\Http\Controllers\Api\TicketController@check');
-
+Route::resource('cashier', CashierController::class)->except(['create']);
+Route::resource('dte', DteController::class);
+Route::resource('collection', CollectionController::class);
+Route::get('branch_office/all_data/get_select', 'App\Http\Controllers\Api\BranchOfficeController@get_select');
+Route::get('dte/show/{branch_office_id}/{cashier_id}/{date}', 'App\Http\Controllers\Api\DteController@show');
+Route::get('dte/download/{folio}', 'App\Http\Controllers\Api\DteController@download');
