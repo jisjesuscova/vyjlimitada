@@ -108,7 +108,7 @@ class DteController extends Controller
     {
         $id = $request->segment(4);
         $url = 'https://libredte.cl';
-        $hash = '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';
+        $hash = 'v0sIp3EiNvinZ3yCq2aCtCnFVRZKShpA';
         $rut = 77593420;
         $dte = 39;
         $folio = $id;
