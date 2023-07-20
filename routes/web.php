@@ -33,9 +33,7 @@ Route::get('/session-data', function () {
     return response()->json(auth()->user());
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/home', [AdministratorController::class, 'index']);
      
 Route::middleware(['auth', 'checkrol:1'])->group(function () {
     Route::get('/branch_office', function () {
