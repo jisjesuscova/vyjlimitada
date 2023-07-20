@@ -25,7 +25,7 @@
     </div>
     <!-- Main Footer -->
     <footer v-if="!hasToken" class="main-footer">
-      <strong>Copyright &copy; 2023 <a href="https://siticket.pe">Siticket.pe</a>.</strong>
+      <strong>Copyright &copy; 2023 <a href="https://vyjlimitada.cl">Vyjlimitada.cl</a>.</strong>
       Todos los derechos reservados.
     </footer>
     <div v-if="hasToken" class="content">

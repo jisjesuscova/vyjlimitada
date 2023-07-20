@@ -16,27 +16,21 @@
                         </router-link>
                     </li>
                     <li class="nav-item" v-if="rol_id == 1">
-                        <router-link to="/team" class="nav-link" data-widget="pushmenu" @click="toggleSidebar">
-                            <i class="nav-icon fas fa-people-group"></i>
-                            Equipos
+                        <router-link to="/collection" class="nav-link" data-widget="pushmenu" @click="toggleSidebar">
+                            <i class="nav-icon fas fa-money-bill"></i>
+                            Recaudaciones
                         </router-link>
                     </li>
-                    <li class="nav-item" v-if="rol_id == 2">
-                        <router-link to="/event" class="nav-link" data-widget="pushmenu" @click="toggleSidebar">
-                            <i class="nav-icon far fa-calendar-days"></i>
-                            Eventos
+                    <li class="nav-item" v-if="rol_id == 1">
+                        <router-link to="/branch_office" class="nav-link" data-widget="pushmenu" @click="toggleSidebar">
+                            <i class="nav-icon fas fa-building"></i>
+                            Sucursales
                         </router-link>
                     </li>
-                    <li class="nav-item" v-if="rol_id == 2">
-                        <router-link to="/control" class="nav-link" data-widget="pushmenu" @click="toggleSidebar">
-                            <i class="nav-icon fas fa-lock"></i>
-                            Controladores
-                        </router-link>
-                    </li>
-                    <li class="nav-item" v-if="rol_id == 3">
-                        <router-link to="/qr_code" class="nav-link" data-widget="pushmenu" @click="toggleSidebar">
-                            <i class="nav-icon fas fa-qrcode"></i>
-                            Lector
+                    <li class="nav-item" v-if="rol_id == 1">
+                        <router-link to="/cashier" class="nav-link" data-widget="pushmenu" @click="toggleSidebar">
+                            <i class="nav-icon fas fa-cash-register"></i>
+                            Cajas
                         </router-link>
                     </li>
                     <li class="nav-item">

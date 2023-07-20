@@ -21,7 +21,7 @@
             <div>
                 <center>
                     <a href="/">
-                        <img src="/template/dist/img/logo.jpg" id="login_logo" alt="Logo">
+                        <img src="/logo.png" id="login_logo" alt="Logo">
                     </a>
                 </center>
             </div>
