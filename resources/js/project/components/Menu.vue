@@ -10,7 +10,7 @@
                     <!-- Add icons to the links using the .nav-icon class
                         with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <router-link to="/home" class="nav-link active" data-widget="pushmenu" @click="toggleSidebar">
+                        <router-link to="/administrator" class="nav-link active" data-widget="pushmenu" @click="toggleSidebar">
                             <i class="nav-icon fas fa-home"></i>
                             Inicio
                         </router-link>
