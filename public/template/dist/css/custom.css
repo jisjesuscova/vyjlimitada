@@ -1,5 +1,5 @@
 #home_logo {
-    width: 60% !important;
+    width: 30% !important;
     padding-top: 200px !important;
 }
 
@@ -12,16 +12,16 @@ a.nav-link {
 }
 
 a.nav-link.active {
-    color: #000 !important;
+    color: #0033FF !important;
 }
 
 .o-pag__link--current {
     pointer-events: none;
-    background-color: #000 !important;
-    border-color: #000 !important;
+    background-color: #0033FF !important;
+    border-color: #0033FF !important;
     color: #fff;
 }
 
 a.bar-code {
-    color: #000 !important;
+    color: #0033FF !important;
 }
