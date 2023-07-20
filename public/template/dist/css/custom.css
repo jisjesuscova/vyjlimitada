@@ -12,16 +12,16 @@ a.nav-link {
 }
 
 a.nav-link.active {
-    color: #0033FF !important;
+    color: #000 !important;
 }
 
 .o-pag__link--current {
     pointer-events: none;
-    background-color: #0033FF !important;
-    border-color: #0033FF !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
     color: #fff;
 }
 
 a.bar-code {
-    color: #0033FF !important;
+    color: #000 !important;
 }
