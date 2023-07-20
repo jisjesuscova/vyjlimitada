@@ -108,8 +108,8 @@ class DteController extends Controller
     {
         $id = $request->segment(4);
         $url = 'https://libredte.cl';
-        $hash = 'mIrjMMSoCs2sHmrK92SH4BsQifGbpZS9';
-        $rut = 77777612;
+        $hash = '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';
+        $rut = 77593420;
         $dte = 39;
         $folio = $id;
         $papelContinuo = 0; // =75 ó =80 para papel contínuo
