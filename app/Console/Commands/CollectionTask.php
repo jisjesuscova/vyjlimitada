@@ -36,7 +36,7 @@ class CollectionTask extends Command
         {
             $cashiers = Cashier::where('branch_office_id', $branch_office->id)->get();
 
-            $date = date('Y-m-d', strtotime('-60 days', strtotime(date('Y-m-d'))));
+            $date = date('Y-m-d', strtotime('-5 days', strtotime(date('Y-m-d'))));
 
             foreach($cashiers as $cashier) {
                 
