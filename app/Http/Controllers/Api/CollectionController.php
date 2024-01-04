@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\BranchOffice;
 use App\Models\Cashier;
 use App\Models\Collection;
+use App\Models\Dte;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
